@@ -34,7 +34,7 @@ print list
 print counter
 ```
 
-## Largest Primer Factor
+## Largest Prime Factor
 ```python
 import math
 
