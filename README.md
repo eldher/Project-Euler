@@ -37,22 +37,20 @@ print counter
 ## Largest Prime Factor
 ```python
 import math
-
-number = 13195
-#Max = int(math.floor(math.sqrt(number)))
-Max = number
-list = range(2,Max+1)
+number = 600851475143
+Max = int(math.floor(math.sqrt(number)))
+list = xrange(2,Max+1)
 marked = [0]*len(list)
 primes = []
 factors = []
 
-for i in range(0,len(list)):
+for i in xrange(0,len(list)):
     if marked[i] == 0:
-        for j in range(i+1,len(list)):
+        for j in range(i**2,len(list)):
             if list[j]%list[i] == 0:
                 marked[j] = 1
                 
-for i in range(0,len(list)):
+for i in xrange(0,len(list)):
     if marked[i] == 0:
         primes.append(list[i])
 
@@ -61,11 +59,11 @@ for i in range(0,len(list)):
         
 marked = [0]*len(primes)
 
-for i in range(0,len(primes)):
+for i in xrange(0,len(primes)):
     if number%primes[i] == 0:
         marked[i] = 1;
         
-for i in range(0,len(primes)):
+for i in xrange(0,len(primes)):
     if marked[i] == 1:
         factors.append(primes[i])
         
