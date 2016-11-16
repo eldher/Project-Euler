@@ -94,3 +94,34 @@ for i in xrange(max_number,100,-1):
                 largest = number
                 print (i,j,number)
 ```
+
+## Inefficient smaller divisors
+```python
+#numbers = 5
+#list = range(5,numbers+1)
+list = [2,3,5,7,8,9,11,13,16,17,19,20]
+marked = [0]*len(list)
+loops = 1
+iterator = 1
+#iterator = 12252240
+#iterator = 232792560
+while (sum(marked) < len(marked)):
+
+    
+    for i in xrange(len(list)):
+        
+        if ( iterator % list[i] == 0 ):
+            marked[i] = 1
+        else:
+            marked[i] = 0
+            
+    #print iterator, marked    
+    
+    iterator = iterator + 1
+
+    #loops = loops + 1
+    #if loops > 3000:
+    #    break
+       
+print iterator-1
+```
