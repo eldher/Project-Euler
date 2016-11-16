@@ -125,3 +125,18 @@ while (sum(marked) < len(marked)):
        
 print iterator-1
 ```
+
+Difference of squares
+```python
+number = 100
+list = range(1,number + 1)
+acum = 0
+
+for i in xrange(number+1):
+    acum = acum + i**2
+    
+square_of_sum = (number*(number+1)/2)**2
+print acum
+print square_of_sum
+print square_of_sum - acum
+```
