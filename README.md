@@ -142,6 +142,7 @@ print square_of_sum - acum
 ```
 
 ## 10001st Prime
+```python
 lista = range(2,500000)
 marked = [0]*len(lista)
 prime = [2]
@@ -168,3 +169,4 @@ for j in range(10000):
     prime.append(resto[0])     
 
 print prime[-1]
+```
