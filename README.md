@@ -71,3 +71,26 @@ for i in xrange(0,len(primes)):
 #print marked
 print factors
 ```
+
+## Palindrome
+'''python
+import math
+max_number = 999
+
+def is_pali(number):
+    s = str(number)
+    s_rev = s[::-1]
+    if s == s_rev:
+        return True
+    
+largest = 0
+current = 0
+for i in xrange(max_number,100,-1):
+    for j in xrange(max_number,100,-1):
+        number = i*j
+        #print number
+        if (is_pali(number)):
+            if number >  largest:
+                largest = number
+                print (i,j,number)
+'''
