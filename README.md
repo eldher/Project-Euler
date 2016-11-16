@@ -73,7 +73,7 @@ print factors
 ```
 
 ## Palindrome
-'''python
+```python
 import math
 max_number = 999
 
@@ -93,4 +93,4 @@ for i in xrange(max_number,100,-1):
             if number >  largest:
                 largest = number
                 print (i,j,number)
-'''
+```
