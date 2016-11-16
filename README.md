@@ -126,7 +126,7 @@ while (sum(marked) < len(marked)):
 print iterator-1
 ```
 
-Difference of squares
+##Difference of squares
 ```python
 number = 100
 list = range(1,number + 1)
@@ -140,3 +140,31 @@ print acum
 print square_of_sum
 print square_of_sum - acum
 ```
+
+## 10001st Prime
+lista = range(2,500000)
+marked = [0]*len(lista)
+prime = [2]
+resto = []
+
+for j in range(10000):
+    #print lista
+    #print marked
+    
+    for i in xrange(len(lista)):
+        if lista[i] % prime[-1] == 0:
+            marked[i] = 1
+    #print marked
+    
+    resto = []
+    for i in xrange(len(marked)):
+        if marked[i] == 0:
+            resto.append(lista[i])
+    
+    lista = resto
+    marked = [0]*len(lista)
+    #print resto
+        
+    prime.append(resto[0])     
+
+print prime[-1]
