@@ -246,6 +246,19 @@ for j in xrange(len(marked)):
 print cont -1 
 ```
 
+## Power Digits Sum [16]
+```python
+n = 2**1000
+
+n_as_string = str(n)
+
+cont = 0
+for i in xrange(len(n_as_string)):
+    cont = cont + int(n_as_string[i])
+
+print cont
+```
+
 ## Factorial Digits Sum [20]
 ```python
 n = 100
