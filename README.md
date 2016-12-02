@@ -245,3 +245,20 @@ for j in xrange(len(marked)):
 #print marked
 print cont -1 
 ```
+
+## Factorial Digits Sum [20]
+```python
+n = 100
+
+cont = 1
+for i in range(n, 0, -1):
+    cont =  cont*i
+
+number_as_string = str(cont)
+
+cont = 0
+for i in xrange(len(number_as_string)):
+    cont = cont + int(number_as_string[i])
+
+print cont
+```
