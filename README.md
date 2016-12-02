@@ -214,3 +214,34 @@ for i in xrange(n-13+1):
             max = acum
             print "MaxString = %s  Factorial = %d" % (num,acum)
 ```
+
+Efficient Erathosthenes
+```python
+import math
+
+max = 2000000
+numbers = range(0,max+1)
+
+marked = [1] *( max +1 )
+#print numbers
+#print marked
+
+for i in xrange(2, int(math.floor(math.sqrt(max))) + 1):
+    if marked[i] == 1:
+        
+        cont = 0
+        current = 0
+        while (current <= max):
+            marked[i**2 + cont*i] = 0
+            cont = cont + 1
+            current = i**2 + cont*i
+
+
+cont = 0
+for j in xrange(len(marked)):
+    if marked[j] == 1:
+        cont = cont + numbers[j]
+
+#print marked
+print cont -1 
+```
