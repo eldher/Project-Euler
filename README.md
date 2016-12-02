@@ -275,3 +275,18 @@ for i in xrange(len(number_as_string)):
 
 print cont
 ```
+
+## 1000-digit Fibonacci Number [25]
+```python
+l = 1000
+fib = [1,1]
+
+k = 2
+#
+while len(str(fib[-1])) < l:
+    x = fib[k-1] + fib[k-2]
+    fib.append(x)
+    k = k + 1
+
+print k, fib[k-1]
+```
