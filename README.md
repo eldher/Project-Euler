@@ -215,7 +215,7 @@ for i in xrange(n-13+1):
             print "MaxString = %s  Factorial = %d" % (num,acum)
 ```
 
-Efficient Erathosthenes
+##Efficient Eratosthenes
 ```python
 import math
 
