@@ -412,3 +412,13 @@ while len(str(fib[-1])) < l:
 
 print k, fib[k-1]
 ```
+
+## Self powers [48]
+```python
+n = 1000
+cont = 0
+for i in range(1,n+1):
+    cont = cont + i**i
+    
+ss = str(cont)
+```
