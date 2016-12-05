@@ -325,6 +325,35 @@ for i in range(20-3):
 print "**************",max_diag_2
 ```
 
+## Highly divisible triangular number [12]
+```python
+import math
+
+n = 12600
+list = []
+max = 0
+last = 0
+total = 0
+for i in range(1, n + 1):
+
+    num = i*(i+1)/2
+    cont = 0
+    for j in range(2,int(math.floor(math.sqrt(num))+1)):
+        if (num % j == 0):
+            cont = cont + 1 
+    
+    total = 2*cont + 1
+    
+    if total > 500:
+        print num
+#    print num,total
+    if (total > max):
+        max = total
+        last = num        
+        
+print last, max
+```
+
 ## Large sum [13]
 ```python
 numbers = """
