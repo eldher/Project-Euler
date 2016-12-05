@@ -474,7 +474,31 @@ for j in xrange(len(list2)):
 
 print str(cont)[:10]
 ```
+## Largest Collatz Sequence [14]
+```python
+max_i = 0
+chain = 0
 
+for i in range(3,1000001):
+    
+    next = i
+    cont = 0
+    while next > 1:
+    
+        if next % 2 == 0:
+            next = next/2
+            cont += 1
+        else:
+            next = 3*next + 1
+            cont += 1
+    
+    if cont + 1 > chain:
+        chain = cont + 1
+        max_i = i        
+
+    
+print max_i,chain
+```
 
 ## Power Digits Sum [16]
 ```python
