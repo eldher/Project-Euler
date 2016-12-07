@@ -545,6 +545,35 @@ while len(str(fib[-1])) < l:
 print k, fib[k-1]
 ```
 
+## Integer Right Triangels [35]
+```python
+import math
+perimeter_list = []
+
+for a in range(1,1001):
+    for b in range(1,1001):
+        c_squared = a**2 + b**2
+        c = float(math.sqrt(c_squared))
+        if c.is_integer():
+            perimeter = a + b + c
+            if perimeter <= 1000:
+                perimeter_list.append(perimeter)
+
+                
+                
+print perimeter_list            
+            
+
+b = {}
+for item in perimeter_list:
+    b[item] = b.get(item, 0) + 1
+
+
+
+print b
+print max(b, key=b.get)
+```
+
 ## Self powers [48]
 ```python
 n = 1000
