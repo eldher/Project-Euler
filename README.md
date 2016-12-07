@@ -586,7 +586,7 @@ as_list = list(k)
 total = int(as_list[1-1])* int(as_list[10-1])* int(as_list[100-1])*int(as_list[1000-1])*int(as_list[10000-1])*int(as_list[100000-1])*int(as_list[1000000-1])
 
 print total
-```python
+```
 
 ## Self powers [48]
 ```python
