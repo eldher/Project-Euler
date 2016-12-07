@@ -545,7 +545,7 @@ while len(str(fib[-1])) < l:
 print k, fib[k-1]
 ```
 
-## Integer Right Triangels [35]
+## Integer Right Triangels [39]
 ```python
 import math
 perimeter_list = []
