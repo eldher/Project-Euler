@@ -574,6 +574,20 @@ print b
 print max(b, key=b.get)
 ```
 
+## Chapeworne Constant [40]
+```python
+k = ""
+
+for i in range(1,1000001):
+    k = k + str(i)
+
+as_list = list(k)
+
+total = int(as_list[1-1])* int(as_list[10-1])* int(as_list[100-1])*int(as_list[1000-1])*int(as_list[10000-1])*int(as_list[100000-1])*int(as_list[1000000-1])
+
+print total
+```python
+
 ## Self powers [48]
 ```python
 n = 1000
