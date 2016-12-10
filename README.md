@@ -1,4 +1,6 @@
-# learn_python
+# Project Euler
+
+In this repo there will be some exercises I've done from Project Euler in Python. Currently I've solved 21, and working in other 3. My plan is to have each solution in a individual file. Copying is not recommended, just read the Archives and start coding.
 
 ## FooBar
 ```python
